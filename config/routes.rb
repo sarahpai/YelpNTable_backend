@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :users
-      resources :restaurants
-      resources :reviews
-      resources :reservations
-      resources :photos
+      resources :users do 
+        resources :reviews 
+        resources :reservations
+      end
+      resources :restaurants do 
+        resources :reviews
+        resources :photos
+      end
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end

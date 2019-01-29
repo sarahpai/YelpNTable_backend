@@ -1,6 +1,6 @@
 class Api::V1::UsersController < ApplicationController
-	skip_before_action :authorized, only: [:create]
-    before_action :set_user, only: [:destroy]
+	# skip_before_action :authorized, only: [:create]
+    # before_action :set_user, only: [:destroy]
   
   def profile
     render json: { user: UserSerializer.new(current_user) }, status: :accepted
@@ -10,6 +10,12 @@ class Api::V1::UsersController < ApplicationController
     @users = User.all 
     render json: @users
   end 
+
+  def show
+    @user = User.find_by(id: params[:id])
+    @restaurant = Restaurant.find_by(id:params[:id])
+    render json: @user
+  end
 
   def create
 		@user = User.create(user_params)
