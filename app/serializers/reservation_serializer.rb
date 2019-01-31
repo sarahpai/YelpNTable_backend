@@ -1,4 +1,4 @@
 class ReservationSerializer < ActiveModel::Serializer
-  attributes :id, :time, :message, :date, :party_size, :restaurant_id
+  attributes :id, :time, :message, :party_size, :restaurant_id, :user_id
   
 end

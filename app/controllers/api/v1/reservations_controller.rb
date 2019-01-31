@@ -33,8 +33,9 @@ class Api::V1::ReservationsController < ApplicationController
   def update
     @reservation.update(reservation_params)
     @restaurant = Restaurant.find_by(id: @reservation.restaurant_id)
+    @reservations = Reservation.all
     if @reservation.valid?
-	  render json: @reservation
+	  render json: @reservations
     else
 	  render json: { error: @reservation.errors.full_messages}
     end
@@ -48,7 +49,7 @@ class Api::V1::ReservationsController < ApplicationController
   private
   def reservation_params
     # params[:reservation].parse_time_select! :time
-    params.require(:reservation).permit(:restaurant_id, :user_id, :time, :date, :party_size, :message)
+    params.require(:reservation).permit(:restaurant_id, :user_id, :time, :party_size, :message,)
   end
 
   def find_reservation
