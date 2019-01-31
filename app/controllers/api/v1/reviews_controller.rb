@@ -19,7 +19,7 @@ class Api::V1::ReviewsController < ApplicationController
 	  @review = Review.create(review_params)
 	  @restaurant = Restaurant.find_by(id: @review.restaurant_id)
 	  if @review.valid?
-		render json: @review
+		render json: @restaurant
 	  else
 		render json: { error: @review.errors.full_messages}
 	end
