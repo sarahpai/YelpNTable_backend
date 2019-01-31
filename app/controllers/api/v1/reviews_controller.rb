@@ -34,9 +34,10 @@ class Api::V1::ReviewsController < ApplicationController
 	def update
 	  @review.update(review_params)
 	  @restaurant = Restaurant.find_by(id: @review.restaurant_id)
-	  @user = User.find_by(id:params[:id])
+		@user = User.find_by(id:params[:id])
+		@reviews = Review.all
 	  if @review.valid?
-		render json: @review
+		render json: @reviews
 	  else
 		render json: { error: @review.errors.full_messages}
 	  end
