@@ -15,7 +15,8 @@ Restaurant.create(
     info: 'Japanese French, $$$$',
     description: 'Renowned, upscale 20-course tasting menu that fuses French & Japanese flavors requires reservations.',
     longitude: -73.9986504,
-    latitude: 40.7561226
+    latitude: 40.7561226,
+    restaurant_photo: 'http://i68.tinypic.com/2ro4x9z.jpg'
 )
 
 Restaurant.create(
@@ -27,7 +28,8 @@ Restaurant.create(
     info: 'Steak House, $$$$',
     description: 'Cash only steak icon where old school waiters serve aged beef in a German beer hall setting.',
     longitude: -73.9646557,
-    latitude: 40.709819
+    latitude: 40.709819,
+    restaurant_photo: 'https://preview.ibb.co/hn2LX0/peter-luger.jpg'
 )
 
 Restaurant.create(
@@ -39,7 +41,8 @@ Restaurant.create(
     info: 'Italian Restaurant, $$$',
     description: 'High-end takes on red-sauce fare await at this A-lister Italian restaurant in a retro-glam space.',
     longitude: -74.0024251,
-    latitude: 40.7279931
+    latitude: 40.7279931,
+    restaurant_photo: 'http://i68.tinypic.com/sbo9qu.jpg'
 )
 
 Restaurant.create(
@@ -51,7 +54,8 @@ Restaurant.create(
     info: 'Sushi Restaurant, $$$$',
     description: 'Two tiny bars set the stage for prix fixe omakase sushi, Japanese tasting menus & spirits.',
     longitude: -73.9924668,
-    latitude: 40.7217317
+    latitude: 40.7217317,
+    restaurant_photo: 'http://i63.tinypic.com/2vj4bqu.jpg'
 )
 
 Restaurant.create(
@@ -63,7 +67,8 @@ Restaurant.create(
     info: 'Southern Restaurant, $$',
     description: 'Elevated Southern fare, barrel-aged cocktails & craft beer in a small rustic space with a market.',
     longitude: -73.9855137,
-    latitude: 40.7226863
+    latitude: 40.7226863,
+    restaurant_photo: 'http://i67.tinypic.com/2upakxe.jpg'
 )
 
 Restaurant.create(
@@ -75,7 +80,8 @@ Restaurant.create(
     info: 'Chicken Restaurant, $$',
     description: 'Korean fried chicken, sides & beer towers in a buzzy space with a DJ spinning vintage vinyl.',
     longitude: -73.9885787,
-    latitude: 40.7481928
+    latitude: 40.7481928,
+    restaurant_photo: 'http://i67.tinypic.com/mk9752.jpg'
 )
 
 Restaurant.create(
@@ -87,7 +93,8 @@ Restaurant.create(
     info: 'Vietnamese, Thai, Asian, $$',
     description: "Obao NY is a Thai and Vietnamese restaurant located in the heart of Hell's Kitchen, New York City.",
     longitude: -73.9951716,
-    latitude: 40.7482128
+    latitude: 40.7482128,
+    restaurant_photo: 'http://i67.tinypic.com/dvmzpu.jpg'
 )
 
 Restaurant.create(
@@ -99,7 +106,8 @@ Restaurant.create(
     info: 'Mexican Restaurant, $$',
     description: 'Neighborhood place for Mexican food by a native chef-owner, plus mezcals & other agave spirits.',
     longitude: -73.9892633,
-    latitude: 40.718774
+    latitude: 40.718774,
+    restaurant_photo: 'http://i65.tinypic.com/v6s0lv.jpg'
 )
 
 Photo.create(restaurant_id: 5, url: 'http://i65.tinypic.com/33tt54l.jpg')
